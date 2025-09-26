@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="Movie Watchlist API", version="0.1.0")
+app = FastAPI(title="Movie Watchlist API by Moulodi", version="0.0.1")
 
 @app.get("/", tags=["Health Check"])
 def health_check():
-    return {"status": "ok"}
+    """Checks if the API is running."""
+    return {"status": "ok", "message": "API is up and running!"}
+

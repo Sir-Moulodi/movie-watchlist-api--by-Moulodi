@@ -1,8 +1,4 @@
 # Written by Amir Hossin Moulodi
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
-from src.core.settings import settings
+from archipy.adapters.orm.sqlalchemy.adapters import AsyncSqlAlchemyAdapter
 
-engine = create_engine(settings.DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
+db_adapter = AsyncSqlAlchemyAdapter()

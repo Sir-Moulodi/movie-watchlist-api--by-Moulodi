@@ -1,0 +1,19 @@
+[project]
+name = "movie-watchlist-api-by-moulodi"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Amir Hossin Moulodi",email = "hojigemini@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.13"
+dependencies = [
+    "archipy[asyncpg,fastapi,pydantic-settings,sqlalchemy] (>=3.13.3,<4.0.0)",
+    "dependency-injector (>=4.48.2,<5.0.0)",
+    "uvicorn (>=0.37.0,<0.38.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
